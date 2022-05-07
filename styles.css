@@ -1,0 +1,59 @@
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.UI{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    width: 300px;
+    border: 2px solid black;
+    padding: 0 24px 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+.button{
+    width: 100%;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding: 16px 0;
+}
+
+div{
+    font-size: 30px;
+}
+
+.display{
+    text-align: right;
+    border: 2px solid black;
+    padding: 16px 16px 16px 0;
+    flex-grow: 1;
+}
+
+
+.right{
+    border-right: 2px solid black;
+}
+
+.clear{
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding: 16px 0;
+    width: 74.5px;
+    box-sizing: border-box;
+}
