@@ -1,3 +1,7 @@
+body{
+    user-select: none;
+}
+
 .container{
     min-height: 100vh;
     display: flex;
@@ -40,7 +44,9 @@ div{
     text-align: right;
     border: 2px solid black;
     padding: 16px 16px 16px 0;
-    flex-grow: 1;
+    width: 225.5px;
+    height: 70px;
+    box-sizing: border-box;
 }
 
 
@@ -56,4 +62,32 @@ div{
     padding: 16px 0;
     width: 74.5px;
     box-sizing: border-box;
+}
+
+.operator{
+    background-color: aqua;
+}
+
+.num{
+    background-color: cadetblue;
+}
+
+.equals{
+    background-color: gold;
+}
+
+.clear{
+    background-color: grey;
+}
+
+.dot{
+    background-color: brown;
+}
+
+.UI{
+    background-color:aliceblue;
+}
+
+.display{
+    background-color: azure;
 }

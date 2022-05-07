@@ -27,6 +27,15 @@ function calculate(num1, num2, operator){
         result = divide(num1, num2)    
     }
     display.textContent = result;
+    if(result === 69){
+        display.textContent = "nice";
+    };
+
+    if(num2 === 0 && operator === "divide"){
+        display.textContent = "lol no";
+        started = false;
+    };
+
     return result;
 }
 
@@ -141,7 +150,11 @@ divButton.addEventListener("click", () => {
     operation("divide");
 });
 
-equalsButton.addEventListener("click", equals)
+equalsButton.addEventListener("click", () => {
+    if(num1 !== "" && num2 !== "" && operator !== ""){
+    equals();
+    }
+});
 
 function firstNum(num){
     if(operator !== ""){
@@ -151,6 +164,7 @@ function firstNum(num){
     //clears the display if this is the start of a new calculation
     if(!started){
         display.textContent = "";
+        num1 = "";
     }
     started = true;
     display.textContent += num;
